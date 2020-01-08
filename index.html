@@ -34,8 +34,9 @@
 					document.title = config.title;
 
 					const itemlistHTML =  config.items.reduce((accumulator, item) => {
-						const text = item.icon ? `<i class="${item.icon} fa-fw"></i>`: item.text;
-						return accumulator + `<a href="${item.link}" title="${item.alt}">${text}</a>`;
+						const text = item.icon ? `<i class="${item.icon} fa-fw"></i>`: item.text.substr(0, 4);
+						const href = /^:\d+/.test(item.link) ? `${window.location.protocol}//${window.location.hostname}${item.link}`:item.link;
+						return accumulator + `<a href="${href}" title="${item.alt}">${text}</a>`;
 					}, '');
 
 					document.getElementById("itemlist").innerHTML = itemlistHTML;
