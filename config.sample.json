@@ -15,6 +15,11 @@
 			"alt" : "Docker Hub",
 			"icon" : "fab fa-docker",
 			"link" : "https://hub.docker.com/u/kukielka/"
+		},
+		{
+			"alt" : "Docker Hub",
+			"text" : "Docker",
+			"link" : "https://hub.docker.com/u/kukielka/"
 		}
 	]
 }

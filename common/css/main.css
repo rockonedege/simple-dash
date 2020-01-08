@@ -52,6 +52,7 @@ body {
 /* link colors */
 #itemlist a {
 	color: #fff;
+	text-decoration:none;
 }
 #itemlist a:hover {
 	color: #c4c4c4;
